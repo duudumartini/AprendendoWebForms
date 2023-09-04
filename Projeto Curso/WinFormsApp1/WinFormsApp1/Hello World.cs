@@ -11,5 +11,10 @@ namespace WinFormsApp1
         {
             Application.Exit();
         }
+
+        private void Btn_ModificaLabel_Click(object sender, EventArgs e)
+        {
+            Lbl_Titulo.Text = Txt_ConteudoLabel.Text;
+        }
     }
 }
