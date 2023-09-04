@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
 {
-    partial class Form1
+    partial class Frm_HelloWorld
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,18 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Lbl_Titulo = new Label();
+            Btn_Sair = new Button();
             SuspendLayout();
             // 
-            // Form1
+            // Lbl_Titulo
+            // 
+            Lbl_Titulo.AutoSize = true;
+            Lbl_Titulo.Location = new Point(12, 9);
+            Lbl_Titulo.Name = "Lbl_Titulo";
+            Lbl_Titulo.Size = new Size(141, 15);
+            Lbl_Titulo.TabIndex = 0;
+            Lbl_Titulo.Text = "Visual Studio .Net Version";
+            // 
+            // Btn_Sair
+            // 
+            Btn_Sair.Location = new Point(627, 360);
+            Btn_Sair.Name = "Btn_Sair";
+            Btn_Sair.Size = new Size(235, 78);
+            Btn_Sair.TabIndex = 1;
+            Btn_Sair.Text = "Sair da Aplicação";
+            Btn_Sair.UseVisualStyleBackColor = true;
+            Btn_Sair.Click += Btn_Sair_Click;
+            // 
+            // Frm_HelloWorld
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(874, 450);
-            Name = "Form1";
-            Text = "Form1";
+            Controls.Add(Btn_Sair);
+            Controls.Add(Lbl_Titulo);
+            Name = "Frm_HelloWorld";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "HelloWorld";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label Lbl_Titulo;
+        private Button Btn_Sair;
     }
 }
