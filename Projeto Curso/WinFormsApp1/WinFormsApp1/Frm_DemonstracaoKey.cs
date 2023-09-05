@@ -16,5 +16,26 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void Txt_Input_KeyDown(object sender, KeyEventArgs e)
+        {
+            Txt_Msg.AppendText("\r\n" + "Pressionei uma tecla " + e.KeyCode + "\r\n");
+
+            Txt_Msg.AppendText("\t" + "Codigo da tecla: " + ((int)e.KeyCode) + "\r\n");
+
+            Txt_Msg.AppendText("\t" + "Nome da tecla: " + e.KeyData + "\r\n");
+
+            Lbl_Lower.Text = e.KeyCode.ToString().ToLower();
+            Lbl_Upper.Text = e.KeyCode.ToString().ToUpper();
+        }
+
+        private void Btn_Reset_Click(object sender, EventArgs e)
+        {
+            Txt_Msg.Text = string.Empty;
+            Txt_Input.Text = string.Empty;
+            Lbl_Lower.Text = string.Empty;
+            Lbl_Upper.Text= string.Empty;
+            Txt_Input.Focus();
+        }
     }
 }
