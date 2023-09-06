@@ -4,6 +4,9 @@
     <Compile Update="Frm_DemonstracaoKey.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Frm_Mascara.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Hello World.cs">
       <SubType>Form</SubType>
     </Compile>
