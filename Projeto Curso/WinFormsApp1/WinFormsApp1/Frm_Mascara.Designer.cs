@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Label Lbl_MascaraAtiva;
             Msk_TextBox = new MaskedTextBox();
             Lbl_Conteudo = new Label();
             Btn_Hora = new Button();
@@ -58,15 +57,6 @@
             Lbl_Conteudo.Size = new Size(0, 19);
             Lbl_Conteudo.TabIndex = 1;
             // 
-            // Lbl_MascaraAtiva
-            // 
-            Lbl_MascaraAtiva.AutoSize = true;
-            Lbl_MascaraAtiva.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            Lbl_MascaraAtiva.Location = new Point(23, 75);
-            Lbl_MascaraAtiva.Name = "Lbl_MascaraAtiva";
-            Lbl_MascaraAtiva.Size = new Size(0, 19);
-            Lbl_MascaraAtiva.TabIndex = 2;
-            // 
             // Btn_Hora
             // 
             Btn_Hora.ForeColor = SystemColors.ControlText;
@@ -77,6 +67,7 @@
             Btn_Hora.TabIndex = 3;
             Btn_Hora.Text = "Hora";
             Btn_Hora.UseVisualStyleBackColor = true;
+            Btn_Hora.Click += Btn_Hora_Click;
             // 
             // Btn_CEP
             // 
@@ -88,6 +79,7 @@
             Btn_CEP.TabIndex = 4;
             Btn_CEP.Text = "CEP";
             Btn_CEP.UseVisualStyleBackColor = true;
+            Btn_CEP.Click += Btn_CEP_Click;
             // 
             // Btn_Moeda
             // 
@@ -99,6 +91,7 @@
             Btn_Moeda.TabIndex = 5;
             Btn_Moeda.Text = "Moeda";
             Btn_Moeda.UseVisualStyleBackColor = true;
+            Btn_Moeda.Click += Btn_Moeda_Click;
             // 
             // Btn_Data
             // 
@@ -110,6 +103,7 @@
             Btn_Data.TabIndex = 6;
             Btn_Data.Text = "Data";
             Btn_Data.UseVisualStyleBackColor = true;
+            Btn_Data.Click += Btn_Data_Click;
             // 
             // Btn_Senha
             // 
@@ -121,6 +115,7 @@
             Btn_Senha.TabIndex = 7;
             Btn_Senha.Text = "Senha";
             Btn_Senha.UseVisualStyleBackColor = true;
+            Btn_Senha.Click += Btn_Senha_Click;
             // 
             // button1
             // 
@@ -132,6 +127,7 @@
             button1.TabIndex = 8;
             button1.Text = "Telefone";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -143,12 +139,23 @@
             button2.TabIndex = 9;
             button2.Text = "Ver Conteudo";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // Lbl_MascaraAtiva
+            // 
+            Lbl_MascaraAtiva.AutoSize = true;
+            Lbl_MascaraAtiva.Location = new Point(23, 77);
+            Lbl_MascaraAtiva.Name = "Lbl_MascaraAtiva";
+            Lbl_MascaraAtiva.Size = new Size(0, 15);
+            Lbl_MascaraAtiva.TabIndex = 10;
             // 
             // Frm_Mascara
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkGray;
             ClientSize = new Size(312, 283);
+            Controls.Add(Lbl_MascaraAtiva);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(Btn_Senha);
@@ -156,7 +163,6 @@
             Controls.Add(Btn_Moeda);
             Controls.Add(Btn_CEP);
             Controls.Add(Btn_Hora);
-            Controls.Add(Lbl_MascaraAtiva);
             Controls.Add(Lbl_Conteudo);
             Controls.Add(Msk_TextBox);
             Name = "Frm_Mascara";
@@ -178,5 +184,6 @@
         private Button Btn_Senha;
         private Button button1;
         private Button button2;
+        private Label Lbl_MascaraAtiva;
     }
 }

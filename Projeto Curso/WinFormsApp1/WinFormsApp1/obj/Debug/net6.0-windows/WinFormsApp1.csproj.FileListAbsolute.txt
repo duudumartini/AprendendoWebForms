@@ -17,3 +17,5 @@ C:\Users\55479\Desktop\AprendendoWebForms\Projeto Curso\WinFormsApp1\WinFormsApp
 C:\Users\55479\Desktop\AprendendoWebForms\Projeto Curso\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Frm_HelloWorld.resources
 C:\Users\55479\Desktop\AprendendoWebForms\Projeto Curso\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Frm_DemonstracaoKey.resources
 C:\Users\55479\Desktop\AprendendoWebForms\Projeto Curso\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Frm_Mascara.resources
+C:\Users\55479\Desktop\AprendendoWebForms\Projeto Curso\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Frm_ValidaCPF.resources
+C:\Users\55479\Desktop\AprendendoWebForms\Projeto Curso\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Frm_ValidaCPF2.resources

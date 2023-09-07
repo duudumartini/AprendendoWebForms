@@ -7,6 +7,12 @@
     <Compile Update="Frm_Mascara.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Frm_ValidaCPF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_ValidaCPF2.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Hello World.cs">
       <SubType>Form</SubType>
     </Compile>
