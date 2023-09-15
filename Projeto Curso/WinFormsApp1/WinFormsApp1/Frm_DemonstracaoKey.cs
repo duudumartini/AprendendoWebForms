@@ -34,7 +34,7 @@ namespace WinFormsApp1
             Txt_Msg.Text = string.Empty;
             Txt_Input.Text = string.Empty;
             Lbl_Lower.Text = string.Empty;
-            Lbl_Upper.Text= string.Empty;
+            Lbl_Upper.Text = string.Empty;
             Txt_Input.Focus();
         }
     }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_HelloWorld));
             Lbl_Titulo = new Label();
             Btn_Sair = new Button();
             Btn_ModificaLabel = new Button();
@@ -81,6 +82,7 @@
             Controls.Add(Btn_ModificaLabel);
             Controls.Add(Btn_Sair);
             Controls.Add(Lbl_Titulo);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Frm_HelloWorld";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "HelloWorld";

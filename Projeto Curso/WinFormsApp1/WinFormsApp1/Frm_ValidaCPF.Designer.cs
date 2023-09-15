@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_ValidaCPF));
             Msk_CPF = new MaskedTextBox();
             Lbl_Resultado = new Label();
             Btn_Reset = new Button();
@@ -81,6 +82,7 @@
             Controls.Add(Btn_Reset);
             Controls.Add(Lbl_Resultado);
             Controls.Add(Msk_CPF);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Frm_ValidaCPF";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Valida CPF";

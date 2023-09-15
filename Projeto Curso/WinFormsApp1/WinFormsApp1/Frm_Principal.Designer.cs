@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Principal));
             Btn_DemonstracaoKey = new Button();
             Btn_HelloWorld = new Button();
             Btn_Mascara = new Button();
@@ -37,6 +38,7 @@
             // 
             // Btn_DemonstracaoKey
             // 
+            Btn_DemonstracaoKey.Image = Properties.Resources.Frm_DemonstracaoKey;
             Btn_DemonstracaoKey.Location = new Point(12, 12);
             Btn_DemonstracaoKey.Name = "Btn_DemonstracaoKey";
             Btn_DemonstracaoKey.Size = new Size(114, 48);
@@ -47,6 +49,7 @@
             // 
             // Btn_HelloWorld
             // 
+            Btn_HelloWorld.Image = Properties.Resources.Frm_HelloWorld;
             Btn_HelloWorld.Location = new Point(132, 12);
             Btn_HelloWorld.Name = "Btn_HelloWorld";
             Btn_HelloWorld.Size = new Size(114, 48);
@@ -57,6 +60,7 @@
             // 
             // Btn_Mascara
             // 
+            Btn_Mascara.Image = Properties.Resources.Frm_Mascara;
             Btn_Mascara.Location = new Point(252, 12);
             Btn_Mascara.Name = "Btn_Mascara";
             Btn_Mascara.Size = new Size(114, 48);
@@ -67,6 +71,7 @@
             // 
             // Btn_ValidaCPF
             // 
+            Btn_ValidaCPF.Image = Properties.Resources.Frm_ValidaCPF;
             Btn_ValidaCPF.Location = new Point(12, 66);
             Btn_ValidaCPF.Name = "Btn_ValidaCPF";
             Btn_ValidaCPF.Size = new Size(114, 48);
@@ -77,6 +82,7 @@
             // 
             // Btn_ValidaCPF2
             // 
+            Btn_ValidaCPF2.Image = Properties.Resources.Frm_ValidaCPF2;
             Btn_ValidaCPF2.Location = new Point(132, 66);
             Btn_ValidaCPF2.Name = "Btn_ValidaCPF2";
             Btn_ValidaCPF2.Size = new Size(114, 48);
@@ -89,12 +95,15 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDarkDark;
             ClientSize = new Size(380, 126);
             Controls.Add(Btn_ValidaCPF2);
             Controls.Add(Btn_ValidaCPF);
             Controls.Add(Btn_Mascara);
             Controls.Add(Btn_HelloWorld);
             Controls.Add(Btn_DemonstracaoKey);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Frm_Principal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Principal";

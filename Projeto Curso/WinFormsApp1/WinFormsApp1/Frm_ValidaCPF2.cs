@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CursoWindowsFormsBiblioteca;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -42,18 +43,18 @@ namespace WinFormsApp1
                     ValidaCPF = Cls_Uteis.Valida(Msk_CPF.Text);
                     if (ValidaCPF == true)
                     {
-                       MessageBox.Show("CPF VÁLIDO", "Menssagem de Validação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("CPF VÁLIDO", "Menssagem de Validação", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                       MessageBox.Show("CPF INVÁLIDO", "Menssagem de Validação", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("CPF INVÁLIDO", "Menssagem de Validação", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                    
+
 
                 }
             }
-            
-            
+
+
         }
     }
 }

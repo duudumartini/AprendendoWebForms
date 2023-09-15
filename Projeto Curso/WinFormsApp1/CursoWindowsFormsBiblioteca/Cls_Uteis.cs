@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WinFormsApp1
+namespace CursoWindowsFormsBiblioteca
 {
-    internal class Cls_Uteis
+    public class Cls_Uteis
     {
         public static bool Valida(string cpf)
         {

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Mascara));
             Msk_TextBox = new MaskedTextBox();
             Lbl_Conteudo = new Label();
             Btn_Hora = new Button();
@@ -165,6 +166,7 @@
             Controls.Add(Btn_Hora);
             Controls.Add(Lbl_Conteudo);
             Controls.Add(Msk_TextBox);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Frm_Mascara";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Frm_Mascara";

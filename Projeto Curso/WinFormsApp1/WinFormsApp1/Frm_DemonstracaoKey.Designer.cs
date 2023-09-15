@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_DemonstracaoKey));
             Txt_Input = new TextBox();
             Txt_Msg = new TextBox();
             Btn_Reset = new Button();
@@ -111,6 +112,7 @@
             Controls.Add(Btn_Reset);
             Controls.Add(Txt_Msg);
             Controls.Add(Txt_Input);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Frm_DemonstracaoKey";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Demonstração Evento Key";
